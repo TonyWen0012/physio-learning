@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PhysioMaster v6.3: 核心肌群終極版</title>
+  <title>PhysioMaster v6.4.2: 全面功能擴展版</title>
 
   <!-- 1. 引入 React 和 Tailwind -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -141,11 +141,11 @@
       { id: 'm_infraspinatus', name: '棘下肌', category: '上肢', difficulty: 2, origin: '肩胛骨棘下窩', insertion: '肱骨大結節中面', innervation: '肩胛上神經(C5-C6)', action: '肩外旋、水平外展', clinical: '投擲減速期關鍵。無力致肩內旋過度。轉移痛至手臂外側及前臂。', synergists: ['m_teres_minor', 'm_deltoid'], antagonists: ['m_subscapularis', 'm_pec_major'], functionalMovements: ['投球減速期', '游泳自由式拉水', '開門外拉'], clinicalTests: ['Infraspinatus Test', 'External Rotation Lag Sign'], injuryScenarios: ['投手過度使用', '肩袖撕裂', '肩夾挤症候群'], dysfunction: ['無法外旋肩關節', '手無法摸到後腰', '投球速度下降'] },
       { id: 'm_teres_minor', name: '小圓肌', category: '上肢', difficulty: 2, origin: '肩胛骨外側緣上2/3', insertion: '肱骨大結節下面', innervation: '腋神經(C5-C6)', action: '肩外旋、內收', clinical: '與棘下肌協同外旋。較少單獨受傷，常與其他肩袖肌同時損傷。腋神經損傷(肩脫臼)時連帶受影響。', synergists: ['m_infraspinatus', 'm_deltoid'], antagonists: ['m_subscapularis', 'm_pec_major', 'm_latissimus'], functionalMovements: ['投球減速期(外旋穩定)', '游泳拉水回復', '側躺外旋運動'], clinicalTests: ['Hornblower Sign', 'External Rotation Lag Sign', 'Resisted External Rotation'], injuryScenarios: ['肩袖撕裂(合併棘下肌)', '肩脫臼腋神經損傷', '過頭投擲過度使用'], dysfunction: ['外旋無力(合併棘下肌)', '肩後側疼痛', '投擲減速期控制差'] },
       { id: 'm_teres_major', name: '大圓肌', category: '上肢', difficulty: 2, origin: '肩胛骨下角', insertion: '肱骨小結節嵴', innervation: '肩胛下神經(C5-C7)', action: '肩內旋、內收、伸展', clinical: '與闊背肌協同，稱「闊背肌的小助手」。引體向上輔助肌。', synergists: ['m_latissimus', 'm_pec_major'], antagonists: ['m_deltoid', 'm_supraspinatus'], functionalMovements: ['引體向上', '划船', '肩伸展內收'], clinicalTests: ['肩伸展肌力測試', '內旋阻力測試'], injuryScenarios: ['過度訓練', '與闊背肌共同拉傷'], dysfunction: ['肩伸展無力', '內旋受限', '引體輔助差'] },
-      { id: 'm_subscapularis', name: '肩胛下肌', category: '上肢', difficulty: 2, origin: '肩胛下窩', insertion: '肱骨小結節', innervation: '肩胛下神經(C5-C6)', action: '肩內旋、內收', clinical: '唯一肩袖內旋肌。Lift-off Test 檢測。緊繃限制外旋，影響投擲動作。', synergists: ['m_pec_major', 'm_latissimus', 'm_teres_major'], antagonists: ['m_infraspinatus', 'm_teres_minor'], functionalMovements: ['內旋肩關節', '划船拉力', '肩袖穩定'], clinicalTests: ['Lift-off Test', 'Belly-press Test', 'Internal Rotation Lag Sign'], injuryScenarios: ['肩袖撕裂', '過度緊繃限制外旋', '投擲運動損傷'], dysfunction: ['肩內旋無力', '後背摸不到', '投擲動作受限'] },
+      { id: 'm_subscapularis', name: '肩胛下肌', category: '上肢', difficulty: 2, origin: '肩胛下窩', insertion: '肱骨小結節', innervation: '上/下肩胛下神經(C5-C7)', action: '肩內旋、內收', clinical: '唯一肩袖內旋肌。Lift-off Test 檢測。緊繃限制外旋，影響投擲動作。', synergists: ['m_pec_major', 'm_latissimus', 'm_teres_major'], antagonists: ['m_infraspinatus', 'm_teres_minor'], functionalMovements: ['內旋肩關節', '划船拉力', '肩袖穩定'], clinicalTests: ['Lift-off Test', 'Belly-press Test', 'Internal Rotation Lag Sign'], injuryScenarios: ['肩袖撕裂', '過度緊繃限制外旋', '投擲運動損傷'], dysfunction: ['肩內旋無力', '後背摸不到', '投擲動作受限'] },
 
       // ===== 上臂肌群 =====
-      { id: 'm_biceps', name: '肱二頭肌', category: '上肢', difficulty: 2, origin: '長頭:盂上結節、短頭:喙突', insertion: '橈骨粗隆', innervation: '肌皮神經(C5-C6)', action: '屈肘、旋後前臂、輔助肩屈曲', clinical: '長頭肌腱炎常見(經二頭肌溝)。Yergason\'s/Speed\'s Test。捲髮肌代表。', synergists: ['m_brachialis', 'm_brachioradialis'], antagonists: ['m_triceps'], functionalMovements: ['彎舉', '引體向上', '轉開瓶蓋(旋後)', '搬運重物'], clinicalTests: ["Speed's Test", "Yergason's Test", "Biceps Load Test II"], injuryScenarios: ['長頭肌腱炎', 'SLAP損傷', '遠端肌腱斷裂(Popeye Sign)'], dysfunction: ['屈肘無力', '前臂旋後無力', '肩前側疼痛'] },
-      { id: 'm_brachialis', name: '肱肌', category: '上肢', difficulty: 2, origin: '肱骨前面下1/2', insertion: '尺骨粗隆', innervation: '肌皮神經(C5-C6)', action: '純粹屈肘(最強屈肘肌)', clinical: '不受前臂旋轉影響。所有屈肘動作必參與。反手引體主動肌。', synergists: ['m_biceps', 'm_brachioradialis'], antagonists: ['m_triceps'], functionalMovements: ['所有屈肘動作', '反手引體', '鎚式彎舉'], clinicalTests: ['純屈肘肌力測試', '中立位屈肘測試'], injuryScenarios: ['反覆拉傷', '過度訓練', '肱骨骨折相關'], dysfunction: ['屈肘無力', '任何旋轉角度皆弱', '搬運困難'] },
+      { id: 'm_biceps', name: '肱二頭肌', category: '上肢', difficulty: 2, origin: '長頭:盂上結節、短頭:喙突', insertion: '橈骨粗隆', innervation: '肌皮神經(C5-C7)', action: '屈肘、旋後前臂、輔助肩屈曲', clinical: '長頭肌腱炎常見(經二頭肌溝)。Yergason\'s/Speed\'s Test。捲髮肌代表。', synergists: ['m_brachialis', 'm_brachioradialis'], antagonists: ['m_triceps'], functionalMovements: ['彎舉', '引體向上', '轉開瓶蓋(旋後)', '搬運重物'], clinicalTests: ["Speed's Test", "Yergason's Test", "Biceps Load Test II"], injuryScenarios: ['長頭肌腱炎', 'SLAP損傷', '遠端肌腱斷裂(Popeye Sign)'], dysfunction: ['屈肘無力', '前臂旋後無力', '肩前側疼痛'] },
+      { id: 'm_brachialis', name: '肱肌', category: '上肢', difficulty: 2, origin: '肱骨前面下1/2', insertion: '尺骨粗隆', innervation: '肌皮神經(C5-C7)', action: '純粹屈肘(最強屈肘肌)', clinical: '不受前臂旋轉影響。所有屈肘動作必參與。反手引體主動肌。部分纖維接受橈神經雙重支配。', synergists: ['m_biceps', 'm_brachioradialis'], antagonists: ['m_triceps'], functionalMovements: ['所有屈肘動作', '反手引體', '鎚式彎舉'], clinicalTests: ['純屈肘肌力測試', '中立位屈肘測試'], injuryScenarios: ['反覆拉傷', '過度訓練', '肱骨骨折相關'], dysfunction: ['屈肘無力', '任何旋轉角度皆弱', '搬運困難'] },
       { id: 'm_coracobrachialis', name: '喙肱肌', category: '上肢', origin: '喙突', insertion: '肱骨內側中段', innervation: '肌皮神經(C5-C7)', action: '肩屈曲、內收', clinical: '肌皮神經穿過此肌。臂叢麻醉landmark。較少單獨受傷。' },
       { id: 'm_triceps', name: '肱三頭肌', category: '上肢', difficulty: 2, origin: '長頭:盂下結節、外側頭:肱骨後上、內側頭:肱骨後下', insertion: '尺骨鷹嘴', innervation: '橈神經(C6-C8)', action: '伸肘、長頭輔助肩伸展', clinical: '推類動作主動肌。橈神經溝骨折致垂腕。長頭常見緊繃致肩痛。', synergists: ['m_anconeus'], antagonists: ['m_biceps', 'm_brachialis'], functionalMovements: ['伏地挺身', '撐體(Dips)', '投擲加速期', '推門'], clinicalTests: ['Resisted Elbow Extension (C7)', 'Triceps Reflex', 'French Press Test'], injuryScenarios: ['尺嘴滑囊炎', '橈神經溝骨折', '投手肘(過度伸展)'], dysfunction: ['伸肘無力', '推力下降', '無法支撐身體'] },
 
@@ -205,7 +205,7 @@
       { id: 'm_tfl', name: '闊筋膜張肌', category: '下肢', difficulty: 2, origin: '髂前上棘(ASIS)', insertion: '脛骨Gerdy結節(經ITB)', innervation: '上臀神經(L4-S1)', action: '髖屈曲、外展、內旋', clinical: '跑者膝(ITBS)主因。過度活化代償臀中肌無力。Ober Test檢測緊繃。', synergists: ['m_glut_med', 'm_glut_min', 'm_rectus_fem'], antagonists: ['m_add_longus', 'm_add_magnus', 'm_glut_max'], functionalMovements: ['跨步', '髖內旋', '跑步擺動期'], clinicalTests: ['Ober Test', 'Noble Compression Test', 'Thomas Test'], injuryScenarios: ['髂脛束摩擦症候群(ITBS)', '彈響髖(Snapping Hip)', '跑者膝'], dysfunction: ['髖外側緊繃疼痛', '假性長短腳', '膝外側痛'] },
 
       // 深層外旋肌群（梨狀肌下方群）
-      { id: 'm_piriformis', name: '梨狀肌', category: '下肢', difficulty: 2, origin: '骶骨前面(S2-S4)', insertion: '大轉子上緣', innervation: '骶叢(S1-S2)', action: '髖外旋、外展', clinical: '坐骨神經穿過或下方，緊繃壓迫致梨狀肌症候群(類坐骨神經痛)。', synergists: ['m_gemelli', 'm_obturator_int', 'm_quad_femoris'], antagonists: ['m_glut_min', 'm_tfl'], functionalMovements: ['轉身動作', '髖外旋穩定', '坐姿跨腿'], clinicalTests: ['Piriformis Test', 'FAIR Test', 'Straight Leg Raise (SLR)'], injuryScenarios: ['梨狀肌症候群', '坐骨神經痛', '深臀症候群'], dysfunction: ['臀部深層疼痛', '坐骨神經壓迫症狀', '久坐疼痛'] },
+      { id: 'm_piriformis', name: '梨狀肌', category: '下肢', difficulty: 2, origin: '骶骨前面(S1-S3)', insertion: '大轉子上緣', innervation: '骶叢(S1-S2)', action: '髖外旋、外展', clinical: '坐骨神經穿過或下方，緊繃壓迫致梨狀肌症候群(類坐骨神經痛)。', synergists: ['m_gemelli', 'm_obturator_int', 'm_quad_femoris'], antagonists: ['m_glut_min', 'm_tfl'], functionalMovements: ['轉身動作', '髖外旋穩定', '坐姿跨腿'], clinicalTests: ['Piriformis Test', 'FAIR Test', 'Straight Leg Raise (SLR)'], injuryScenarios: ['梨狀肌症候群', '坐骨神經痛', '深臀症候群'], dysfunction: ['臀部深層疼痛', '坐骨神經壓迫症狀', '久坐疼痛'] },
       { id: 'm_obturator_int', name: '閉孔內肌', category: '下肢', origin: '閉孔內側', insertion: '大轉子內側', innervation: '閉孔內肌神經(L5-S2)', action: '髖外旋', clinical: '與上/下孖肌形成「三兄弟」。深層穩定肌。' },
       { id: 'm_gemelli', name: '上/下孖肌', category: '下肢', origin: '坐骨棘/坐骨結節', insertion: '大轉子(夾閉孔內肌)', innervation: '閉孔內肌神經/股方肌神經', action: '髖外旋', clinical: '協助閉孔內肌。較少單獨損傷。' },
       { id: 'm_quad_femoris', name: '股方肌', category: '下肢', origin: '坐骨結節外側', insertion: '轉子間嵴', innervation: '股方肌神經(L4-S1)', action: '髖外旋', clinical: '最強外旋肌之一。與坐骨神經緊鄰。' },
@@ -214,7 +214,7 @@
       { id: 'm_iliopsoas', name: '髂腰肌', category: '下肢', difficulty: 2, origin: '髂窩、T12-L5椎體/橫突', insertion: '股骨小轉子', innervation: '腰叢、股神經(L1-L4)', action: '髖屈曲、外旋', clinical: '骨盆前傾主因。Thomas Test測緊繃。跑者常見緊繃致髖前痛。', synergists: ['m_rectus_fem', 'm_tfl', 'm_sartorius'], antagonists: ['m_glut_max', 'm_hamstrings'], functionalMovements: ['抬腿', '跑步擺動期', '仰臥起坐'], clinicalTests: ['Thomas Test', 'Modified Thomas Test', 'Stork Test'], injuryScenarios: ['跑者髖前痛', '骨盆前傾', '腰椎過度前凸'], dysfunction: ['髖屈曲受限', '骨盆前傾', '下背痛(代償)'] },
 
       // --- 大腿前側肌群（股四頭肌）---
-      { id: 'm_rectus_fem', name: '股直肌', category: '下肢', difficulty: 2, origin: '髂前下棘(AIIS)', insertion: '脛骨粗隆(經髌骨)', innervation: '股神經(L2-L4)', action: '膝伸展、髖屈曲', clinical: '唯一雙關節四頭肌。Ely Test測緊繃。踢球主動肌。', synergists: ['m_vastus_med', 'm_vastus_lat', 'm_vastus_int'], antagonists: ['m_hamstrings'], functionalMovements: ['踢球', '蹲起', '上樓梯'], clinicalTests: ['Ely Test', '膝伸展肌力測試'], injuryScenarios: ['過度緊繃', '踢球拉傷', '髖屈曲障礙'], dysfunction: ['髖屈曲受限', '膝伸展無力', '骨盆前傾'] },
+      { id: 'm_rectus_fem', name: '股直肌', category: '下肢', difficulty: 2, origin: '直頭:髂前下棘(AIIS)、反轉頭:髖臼上溝', insertion: '脛骨粗隆(經髌骨)', innervation: '股神經(L2-L4)', action: '膝伸展、髖屈曲', clinical: '唯一雙關節四頭肌。Ely Test測緊繃。踢球主動肌。', synergists: ['m_vastus_med', 'm_vastus_lat', 'm_vastus_int'], antagonists: ['m_hamstrings'], functionalMovements: ['踢球', '蹲起', '上樓梯'], clinicalTests: ['Ely Test', '膝伸展肌力測試'], injuryScenarios: ['過度緊繃', '踢球拉傷', '髖屈曲障礙'], dysfunction: ['髖屈曲受限', '膝伸展無力', '骨盆前傾'] },
       { id: 'm_vastus_med', name: '股內側肌(VMO)', category: '下肢', difficulty: 2, origin: '股骨粗線內側', insertion: '髌骨內側、脛骨粗隆', innervation: '股神經(L2-L4)', action: '膝伸展、穩定髌骨', clinical: '控制髌骨軌跡，預防髌骨外翻。終末15度膝伸展關鍵。', synergists: ['m_rectus_fem', 'm_vastus_lat'], antagonists: ['m_hamstrings'], functionalMovements: ['終末膝伸展', '蹲起鎖定', '髌骨穩定'], clinicalTests: ['VMO激活測試', '髌骨軌跡評估'], injuryScenarios: ['髌股疼痛症候群', 'VMO無力', '髌骨外翻'], dysfunction: ['髌骨不穩', '膝前痛', '終末伸展弱'] },
       { id: 'm_vastus_lat', name: '股外側肌', category: '下肢', difficulty: 2, origin: '股骨粗線外側', insertion: '髌骨外側、脛骨粗隆', innervation: '股神經(L2-L4)', action: '膝伸展', clinical: '最大四頭肌。過度活化致髌骨外拉，引發髌股疼痛症候群。', synergists: ['m_rectus_fem', 'm_vastus_med'], antagonists: ['m_hamstrings'], functionalMovements: ['膝伸展', '蹲起', '騎車'], clinicalTests: ['膝伸展肌力', '髌骨外拉評估'], injuryScenarios: ['過度活化', '髌股疼痛', 'ITB症候群'], dysfunction: ['髌骨外拉', '膝前痛', '髌骨失衡'] },
       { id: 'm_vastus_int', name: '股中間肌', category: '下肢', origin: '股骨前面', insertion: '髌骨、脛骨粗隆', innervation: '股神經(L2-L4)', action: '膝伸展', clinical: '最深層四頭肌。與股直肌間有滑液囊。' },
@@ -234,7 +234,7 @@
       { id: 'm_semimembranosus', name: '半膜肌', category: '下肢', difficulty: 2, origin: '坐骨結節', insertion: '脛骨內側髁後', innervation: '坐骨神經(L5-S2)', action: '膝屈曲、髖伸展、小腿內旋', clinical: '最深層腿後肌。與半腱肌協同。膝後穩定關鍵。', synergists: ['m_semitendinosus', 'm_biceps_fem', 'm_gastrocnemius'], antagonists: ['m_rectus_fem', 'm_vastus_group'], functionalMovements: ['膝屈曲', '髖伸展', '膝後穩定'], clinicalTests: ['Hamstring Strength Test', 'Posterior Knee Stability', 'Resisted Knee Flexion'], injuryScenarios: ['腿後肌拉傷', '膝後不穩', '坐骨結節疼痛'], dysfunction: ['膝屈曲無力', '膝後不穩定', '髖伸展受限'] },
 
       // --- 小腿前側肌群（背屈/伸趾肌群）---
-      { id: 'm_tib_ant', name: '脛前肌', category: '下肢', difficulty: 2, origin: '脛骨外側面、骨間膜', insertion: '內側楔狀骨、第1蹠骨基部', innervation: '深腓神經(L4-S1)', action: '踝背屈、內翻', clinical: '步行擺動期關鍵(防止垂足)。跑者前腔室症候群好發。緊繃致脛骨內側壓力症候群(Shin Splints)。', synergists: ['m_ehl', 'm_edl'], antagonists: ['m_gastrocnemius', 'm_soleus', 'm_peroneus_longus'], functionalMovements: ['走路擺動期(腳尖離地)', '腳跟著地緩衝', '踢球鎖定腳踝'], clinicalTests: ['Resisted Dorsiflexion', 'Deep Peroneal Nerve Stretch', 'Heel Walk Test'], injuryScenarios: ['垂足(神經損傷)', '前腔室症候群', '脛前肌腱炎(上坡跑)'], dysfunction: ['垂足步態(Steppage Gait)', '腳跟著地聲大(Slap Foot)', '頻繁絆倒'] },
+      { id: 'm_tib_ant', name: '脛前肌', category: '下肢', difficulty: 2, origin: '脛骨外側髁、脛骨外側面上2/3、骨間膜', insertion: '內側楔狀骨、第1蹠骨基部', innervation: '深腓神經(L4-S1)', action: '踝背屈、內翻', clinical: '步行擺動期關鍵(防止垂足)。跑者前腔室症候群好發。緊繃致脛骨內側壓力症候群(Shin Splints)。', synergists: ['m_ehl', 'm_edl'], antagonists: ['m_gastrocnemius', 'm_soleus', 'm_peroneus_longus'], functionalMovements: ['走路擺動期(腳尖離地)', '腳跟著地緩衝', '踢球鎖定腳踝'], clinicalTests: ['Resisted Dorsiflexion', 'Deep Peroneal Nerve Stretch', 'Heel Walk Test'], injuryScenarios: ['垂足(神經損傷)', '前腔室症候群', '脛前肌腱炎(上坡跑)'], dysfunction: ['垂足步態(Steppage Gait)', '腳跟著地聲大(Slap Foot)', '頻繁絆倒'] },
       { id: 'm_ehl', name: '伸拇長肌', category: '下肢', origin: '腓骨內側、骨間膜', insertion: '拇趾末節骨', innervation: '深腓神經(L4-S1)', action: '伸拇趾、踝背屈', clinical: '經伸肌支持帶。跑者前腔室症候群相關。' },
       { id: 'm_edl', name: '伸趾長肌', category: '下肢', origin: '脛骨外側髁、腓骨、骨間膜', insertion: '第2-5趾伸肌腱擴張', innervation: '深腓神經(L4-S1)', action: '伸趾2-5、踝背屈', clinical: '與脛前肌並行。垂足時腳趾也無法伸展。' },
       { id: 'm_peroneus_tertius', name: '第三腓骨肌', category: '下肢', origin: '腓骨下1/3', insertion: '第5蹠骨基部', innervation: '深腓神經(L4-S1)', action: '踝背屈、外翻', clinical: '伸趾長肌分支。約10%人缺失。輔助背屈。' },
@@ -245,7 +245,7 @@
 
       // --- 小腿後側肌群（蹠屈肌群：淺→深）---
       // 淺層（小腿三頭肌）
-      { id: 'm_gastrocnemius', name: '腓腸肌', category: '下肢', difficulty: 2, origin: '股骨內/外側髁', insertion: '跟骨(經跟腱)', innervation: '脛神經(S1-S2)', action: '踝蹠屈、膝屈曲', clinical: '由快縮肌組成，負責爆發力動作。網球腿(Tennis Leg)為內側頭肌腱交接處撕裂。緊繃導致足底筋膜炎。', synergists: ['m_soleus', 'm_plantaris'], antagonists: ['m_tib_ant'], functionalMovements: ['跳躍', '短跑起跑', '墊腳尖', '上下樓梯'], clinicalTests: ['Silfverskiöld Test', 'Thompson Test (Achilles)', 'Calf Raise Test'], injuryScenarios: ['網球腿(肌肉撕裂)', '阿基里斯腱斷裂', '夜間抽筋'], dysfunction: ['無法墊腳尖', '跳躍力下降', '走路推進無力'] },
+      { id: 'm_gastrocnemius', name: '腓腸肌', category: '下肢', difficulty: 2, origin: '股骨內/外側髁', insertion: '跟骨(經跟腱)', innervation: '脛神經(S1-S2,源自L4-S3)', action: '踝蹠屈、膝屈曲', clinical: '由快縮肌組成，負責爆發力動作。網球腿(Tennis Leg)為內側頭肌腱交接處撕裂。緊繃導致足底筋膜炎。', synergists: ['m_soleus', 'm_plantaris'], antagonists: ['m_tib_ant'], functionalMovements: ['跳躍', '短跑起跑', '墊腳尖', '上下樓梯'], clinicalTests: ['Silfverskiöld Test', 'Thompson Test (Achilles)', 'Calf Raise Test'], injuryScenarios: ['網球腿(肌肉撕裂)', '阿基里斯腱斷裂', '夜間抽筋'], dysfunction: ['無法墊腳尖', '跳躍力下降', '走路推進無力'] },
       { id: 'm_soleus', name: '比目魚肌', category: '下肢', difficulty: 2, origin: '脛/腓骨後上1/3、比目魚肌腱弓', insertion: '跟骨(經跟腱)', innervation: '脛神經(S1-S2)', action: '純粹踝蹠屈', clinical: '耐力肌(慢縮肌為主)，幫助靜脈回流(肌肉幫浦)。屈膝時主要蹠屈肌。', synergists: ['m_gastrocnemius', 'm_plantaris'], antagonists: ['m_tib_ant'], functionalMovements: ['長距離走路', '坐姿提踵', '站立推進'], clinicalTests: ['膝屈提踵測試', 'Knee-to-Wall Test'], injuryScenarios: ['座姿緊繃', '過度使用', '跟骨肌腱炎'], dysfunction: ['耐力下降', '蹠屈無力(屈膝)', '靜脈回流差'] },
       { id: 'm_plantaris', name: '蹠肌', category: '下肢', origin: '股骨外側髁上', insertion: '跟骨(跟腱內側)', innervation: '脛神經(S1-S2)', action: '輔助踝蹠屈、膝屈曲', clinical: '約10%人缺失。細長肌腱可用於移植。斷裂致「網球腿」。' },
 
@@ -447,12 +447,77 @@
             'm_ankle_dorsiflexors',
             'm_ankle_plantarflexors'
           ]
+        },
+        // v6.4.2 新增課程
+        lateral_epicondyle: {
+          id: 'lateral_epicondyle',
+          name: '前臂伸肌群（網球肘）',
+          description: '肱骨外上髁相關肌群與網球肘鑑別',
+          icon: 'Zap',
+          color: 'rose',
+          units: [
+            'm_extensor_carpi_radialis_longus',
+            'm_extensor_carpi_radialis_brevis',
+            'm_extensor_digitorum',
+            'm_extensor_carpi_ulnaris',
+            'm_supinator',
+            'm_brachioradialis'
+          ]
+        },
+        core_stability: {
+          id: 'core_stability',
+          name: '核心穩定系統',
+          description: '深層與淺層核心肌群穩定機制',
+          icon: 'Shield',
+          color: 'violet',
+          units: [
+            'm_transversus_abdominis',
+            'm_multifidus',
+            'm_diaphragm',
+            'm_pelvic_floor',
+            'm_rectus_abdominis',
+            'm_external_oblique',
+            'm_internal_oblique',
+            'm_erector_spinae'
+          ]
+        },
+        scapular_stability: {
+          id: 'scapular_stability',
+          name: '肩胛穩定系統',
+          description: '肩胛骨動態穩定與翼狀肩胛鑑別',
+          icon: 'Crosshair',
+          color: 'sky',
+          units: [
+            'm_serratus_anterior',
+            'm_trapezius',
+            'm_rhomboid_major',
+            'm_rhomboid_minor',
+            'm_levator_scapulae',
+            'm_pectoralis_minor'
+          ]
+        },
+        tmj_muscles: {
+          id: 'tmj_muscles',
+          name: '顳顎關節肌群',
+          description: 'TMD 相關咀嚼肌與頭頸肌群',
+          icon: 'Brain',
+          color: 'pink',
+          units: [
+            'm_masseter',
+            'm_temporalis',
+            'm_lateral_pterygoid',
+            'm_medial_pterygoid',
+            'm_sternocleidomastoid',
+            'm_scalenes'
+          ]
         }
       };
 
       const [newEntry, setNewEntry] = useState({
-        name: '', category: '上肢', origin: '', insertion: '', innervation: '', action: '', clinical: ''
+        name: '', category: '上肢', origin: '', insertion: '', innervation: '', action: '', clinical: '',
+        functionalMovements: '', clinicalTests: '', injuryScenarios: '', synergists: '', antagonists: '', dysfunction: ''
       });
+      const [showAdvancedFields, setShowAdvancedFields] = useState(false);
       const [editingId, setEditingId] = useState(null);
 
       useEffect(() => {
@@ -521,6 +586,27 @@
         setUserApiKey('');
         setIsKeySet(false);
         setGameState('menu');
+      };
+
+      const handleClearAllData = () => {
+        const confirmed = window.confirm(
+          '⚠️ 確定要清除所有使用痕跡嗎？\n\n' +
+          '這將刪除以下所有資料：\n' +
+          '• API Key\n' +
+          '• 自訂/編輯過的資料庫\n' +
+          '• SRS 間隔複習紀錄 & 錯題本\n' +
+          '• 主題課程進度 & 星數\n\n' +
+          '此操作無法復原！'
+        );
+        if (!confirmed) return;
+        const doubleConfirm = window.confirm('再次確認：真的要清除全部資料？');
+        if (!doubleConfirm) return;
+        localStorage.removeItem('physio_master_api_key');
+        localStorage.removeItem('physio_master_full_db');
+        localStorage.removeItem('physio_master_srs_data');
+        localStorage.removeItem('physio_master_courses');
+        alert('✅ 所有使用痕跡已清除！頁面將重新載入。');
+        window.location.reload();
       };
 
       // 導出功能 (Export to Markdown)
@@ -646,7 +732,7 @@
       };
 
       const goToAddPage = () => {
-        setNewEntry({ name: '', category: '上肢', origin: '', insertion: '', innervation: '', action: '', clinical: '' });
+        setNewEntry({ name: '', category: '上肢', origin: '', insertion: '', innervation: '', action: '', clinical: '', functionalMovements: '', clinicalTests: '', injuryScenarios: '', synergists: '', antagonists: '', dysfunction: '' });
         setEditingId(null);
         setGameState('add_muscle');
       };
@@ -671,7 +757,7 @@
           alert("儲存失敗：儲存空間不足，請刪除部分資料後重試。");
           return;
         }
-        setNewEntry({ name: '', category: '上肢', origin: '', insertion: '', innervation: '', action: '', clinical: '' });
+        setNewEntry({ name: '', category: '上肢', origin: '', insertion: '', innervation: '', action: '', clinical: '', functionalMovements: '', clinicalTests: '', injuryScenarios: '', synergists: '', antagonists: '', dysfunction: '' });
         setEditingId(null);
         setGameState('glossary');
       };
@@ -679,6 +765,7 @@
       const handleResetDb = () => {
         if (confirm("警告：這將會刪除您所有的新增與修改，恢復到原本的預設資料庫。\n\n您確定要重置嗎？")) {
           setDisplayDb(DEFAULT_ANATOMY_DB);
+          setSearchTerm("");
           try {
             localStorage.setItem('physio_master_full_db', JSON.stringify(DEFAULT_ANATOMY_DB));
             alert("資料庫已重置為預設值。");
@@ -1042,11 +1129,13 @@
           setIsAiLoading(false);
         } else if (useNewQuestionType) {
           // ========== v5新题型系统 ==========
-          // 题型权重：功能30%、临床30%、标准40%
+          // v6.4.2 题型权重：功能20%、臨床25%、拮抗15%、功能障礙10%、标准30%
           const rand = Math.random();
           let questionType;
-          if (rand < 0.3) questionType = 'functional';
-          else if (rand < 0.6) questionType = 'clinical';
+          if (rand < 0.20) questionType = 'functional';
+          else if (rand < 0.45) questionType = 'clinical';
+          else if (rand < 0.60) questionType = 'antagonist';
+          else if (rand < 0.70) questionType = 'dysfunction_fwd';
           else questionType = 'enhanced_standard';
 
           // 题型1：功能应用题
@@ -1107,10 +1196,70 @@
                 { id: target.id, text: target.name, isCorrect: true },
                 ...clinicalDistractors.map(d => ({ id: d.id, text: d.name, isCorrect: false }))
               ].sort(() => 0.5 - Math.random()));
+              // v6.4.2 新題型：功能障礙 → 肌肉名稱
+            } else if (target.dysfunction && target.dysfunction.length > 0) {
+              const dysfunc = target.dysfunction[Math.floor(Math.random() * target.dysfunction.length)];
+              const dysfuncDistractors = displayDb
+                .filter(m => m.category === target.category && m.id !== target.id && m.id.startsWith('m_'))
+                .sort(() => 0.5 - Math.random())
+                .slice(0, 3);
+              setCurrentQuestion({
+                targetMuscle: target.name,
+                questionText: `【功能障礙】患者表現出「${dysfunc}」，最可能是哪條肌肉功能異常？`,
+                type: 'dysfunction',
+                data: target
+              });
+              setOptions([
+                { id: target.id, text: target.name, isCorrect: true },
+                ...dysfuncDistractors.map(d => ({ id: d.id, text: d.name, isCorrect: false }))
+              ].sort(() => 0.5 - Math.random()));
             } else {
               // 回退到标准题型
               useNewQuestionType = false;
             }
+          }
+
+          // v6.4.2 題型：拮抗肌配對
+          else if (questionType === 'antagonist' && target.antagonists && target.antagonists.length > 0) {
+            const correctAntId = target.antagonists[Math.floor(Math.random() * target.antagonists.length)];
+            const correctAnt = displayDb.find(m => m.id === correctAntId);
+            if (correctAnt) {
+              const antDistractors = displayDb
+                .filter(m => m.id !== correctAntId && m.id !== target.id && m.id.startsWith('m_') && m.category === target.category)
+                .sort(() => 0.5 - Math.random())
+                .slice(0, 3);
+              setCurrentQuestion({
+                targetMuscle: target.name,
+                questionText: `【拮抗肌配對】「${target.name}」的拮抗肌是？`,
+                type: 'antagonist',
+                data: target
+              });
+              setOptions([
+                { id: correctAnt.id, text: correctAnt.name, isCorrect: true },
+                ...antDistractors.map(d => ({ id: d.id, text: d.name, isCorrect: false }))
+              ].sort(() => 0.5 - Math.random()));
+            } else {
+              useNewQuestionType = false;
+            }
+          }
+
+          // v6.4.2 題型：功能障礙→肌肉
+          else if (questionType === 'dysfunction_fwd' && target.dysfunction && target.dysfunction.length > 0) {
+            const dysfunc = target.dysfunction[Math.floor(Math.random() * target.dysfunction.length)];
+            const dysfuncDistractors = displayDb
+              .filter(m => m.category === target.category && m.id !== target.id && m.id.startsWith('m_'))
+              .sort(() => 0.5 - Math.random())
+              .slice(0, 3);
+            setCurrentQuestion({
+              targetMuscle: target.name,
+              questionText: `【功能障礙】患者出現「${dysfunc}」，最可能是哪條肌肉的問題？`,
+              type: 'dysfunction',
+              data: target
+            });
+            setOptions([
+              { id: target.id, text: target.name, isCorrect: true },
+              ...dysfuncDistractors.map(d => ({ id: d.id, text: d.name, isCorrect: false }))
+            ].sort(() => 0.5 - Math.random()));
           }
 
           // 题型3：标准识别（专业陷阱）
@@ -1287,7 +1436,7 @@
           <button onClick={() => setIsKeySet(true)} className="px-6 py-3 bg-slate-700 rounded-xl text-slate-300 font-bold w-full max-w-sm hover:bg-slate-600 transition">
             跳過（離線使用）
           </button>
-          <a href="https://aistudio.google.com/app/apikey" target="_blank" className="text-xs text-cyan-500 hover:underline">免費申請 API Key</a>
+
           <p className="text-xs text-slate-500 max-w-sm text-center">💡 離線模式可使用全部功能，但 AI 臨床題、AI 智能填寫等功能將不可用</p>
         </div>
       );
@@ -1361,6 +1510,53 @@
                 value={newEntry.clinical} onChange={e => setNewEntry({ ...newEntry, clinical: e.target.value })}></textarea>
             </div>
 
+            {/* v6.4.2 進階欄位 */}
+            <button type="button" onClick={() => setShowAdvancedFields(!showAdvancedFields)}
+              className="w-full py-2 bg-slate-700/50 hover:bg-slate-700 rounded-lg text-slate-400 text-sm font-bold flex items-center justify-center gap-2 transition border border-slate-600/50">
+              <Icon name={showAdvancedFields ? 'ChevronUp' : 'ChevronDown'} size={16} />
+              {showAdvancedFields ? '收合進階欄位' : '展開進階欄位（功能動作、臨床測試、協同/拮抗肌...）'}
+            </button>
+
+            {showAdvancedFields && (
+              <div className="space-y-4 bg-slate-900/30 p-4 rounded-xl border border-dashed border-slate-600/50">
+                <p className="text-xs text-slate-500">💡 多個項目請用逗號（,）分隔</p>
+                <div className="grid grid-cols-2 gap-4">
+                  <div>
+                    <label className="block text-emerald-400 text-xs mb-1">功能動作 (Functional Movements)</label>
+                    <input type="text" className="w-full bg-slate-900 border border-slate-700 rounded-lg p-2 text-white text-sm focus:border-emerald-500 outline-none"
+                      value={newEntry.functionalMovements} onChange={e => setNewEntry({ ...newEntry, functionalMovements: e.target.value })} placeholder="例：投球,游泳" />
+                  </div>
+                  <div>
+                    <label className="block text-violet-400 text-xs mb-1">臨床測試 (Clinical Tests)</label>
+                    <input type="text" className="w-full bg-slate-900 border border-slate-700 rounded-lg p-2 text-white text-sm focus:border-violet-500 outline-none"
+                      value={newEntry.clinicalTests} onChange={e => setNewEntry({ ...newEntry, clinicalTests: e.target.value })} placeholder="例：Empty Can Test" />
+                  </div>
+                </div>
+                <div>
+                  <label className="block text-rose-400 text-xs mb-1">損傷機制 (Injury Scenarios)</label>
+                  <input type="text" className="w-full bg-slate-900 border border-slate-700 rounded-lg p-2 text-white text-sm focus:border-rose-500 outline-none"
+                    value={newEntry.injuryScenarios} onChange={e => setNewEntry({ ...newEntry, injuryScenarios: e.target.value })} placeholder="例：反覆投擲,肩夾擠" />
+                </div>
+                <div className="grid grid-cols-2 gap-4">
+                  <div>
+                    <label className="block text-sky-400 text-xs mb-1">協同肌 ID (Synergists)</label>
+                    <input type="text" className="w-full bg-slate-900 border border-slate-700 rounded-lg p-2 text-white text-sm focus:border-sky-500 outline-none"
+                      value={newEntry.synergists} onChange={e => setNewEntry({ ...newEntry, synergists: e.target.value })} placeholder="例：m_teres_minor,m_deltoid" />
+                  </div>
+                  <div>
+                    <label className="block text-orange-400 text-xs mb-1">拮抗肌 ID (Antagonists)</label>
+                    <input type="text" className="w-full bg-slate-900 border border-slate-700 rounded-lg p-2 text-white text-sm focus:border-orange-500 outline-none"
+                      value={newEntry.antagonists} onChange={e => setNewEntry({ ...newEntry, antagonists: e.target.value })} placeholder="例：m_subscapularis" />
+                  </div>
+                </div>
+                <div>
+                  <label className="block text-amber-400 text-xs mb-1">功能障礙 (Dysfunction)</label>
+                  <input type="text" className="w-full bg-slate-900 border border-slate-700 rounded-lg p-2 text-white text-sm focus:border-amber-500 outline-none"
+                    value={newEntry.dysfunction} onChange={e => setNewEntry({ ...newEntry, dysfunction: e.target.value })} placeholder="例：無法外旋肩關節,手無法摸到後腰" />
+                </div>
+              </div>
+            )}
+
             <button onClick={handleAddMuscle} className="w-full py-4 bg-emerald-600 hover:bg-emerald-500 rounded-xl text-white font-bold flex items-center justify-center gap-2 transition">
               <Icon name="Save" /> {editingId ? "儲存修改" : "新增至知識庫"}
             </button>
@@ -1429,7 +1625,11 @@
                 <Icon name="BarChart3" size={18} /> 學習統計
               </button>
             </div>
-            <button onClick={handleClearKey} className="text-xs text-slate-500 flex items-center gap-1 hover:text-white"><Icon name="LogOut" size={14} /> 清除 Key</button>
+            <p className="text-xs text-slate-600 text-center max-w-md leading-relaxed mt-2">⚠️ 本應用程式所有解剖學資料僅供學習參考，未經專業審核。如有醫療或臨床需求，請以教科書或專業醫療人員意見為準。</p>
+            <div className="flex items-center gap-4 mt-1">
+              <button onClick={handleClearKey} className="text-xs text-slate-500 flex items-center gap-1 hover:text-white"><Icon name="LogOut" size={14} /> 清除 Key</button>
+              <button onClick={handleClearAllData} className="text-xs text-rose-400/60 flex items-center gap-1 hover:text-rose-300"><Icon name="Trash2" size={14} /> 清除所有使用痕跡</button>
+            </div>
           </div>
         );
       };
@@ -1474,6 +1674,25 @@
                 <p><span className="text-slate-500">N:</span> <span className="text-yellow-200">{currentQuestion.data.innervation}</span></p>
                 <p><span className="text-slate-500">A:</span> {currentQuestion.data.action}</p>
                 <p className="mt-2 pt-2 border-t border-slate-700 text-rose-300 italic"><Icon name="Stethoscope" size={14} className="inline mr-1" />{currentQuestion.data.clinical}</p>
+                {/* v6.4.1 Synergists / Antagonists / Dysfunction in Feedback */}
+                {currentQuestion.data.synergists && currentQuestion.data.synergists.length > 0 && (
+                  <div className="mt-2">
+                    <span className="text-xs text-slate-500">協同肌：</span>
+                    <span className="text-xs text-sky-300">{currentQuestion.data.synergists.map(id => { const m = displayDb.find(d => d.id === id); return m ? m.name : id; }).join('、')}</span>
+                  </div>
+                )}
+                {currentQuestion.data.antagonists && currentQuestion.data.antagonists.length > 0 && (
+                  <div className="mt-1">
+                    <span className="text-xs text-slate-500">拮抗肌：</span>
+                    <span className="text-xs text-orange-300">{currentQuestion.data.antagonists.map(id => { const m = displayDb.find(d => d.id === id); return m ? m.name : id; }).join('、')}</span>
+                  </div>
+                )}
+                {currentQuestion.data.dysfunction && currentQuestion.data.dysfunction.length > 0 && (
+                  <div className="mt-1">
+                    <span className="text-xs text-slate-500">功能障礙：</span>
+                    <span className="text-xs text-amber-300">{currentQuestion.data.dysfunction.join('、')}</span>
+                  </div>
+                )}
               </div>
             </div>
 
@@ -1805,7 +2024,15 @@
           typeFiltered = displayDb.filter(i => i.id.startsWith('b_'));
         }
 
-        const filtered = typeFiltered.filter(i => i.name.includes(searchTerm) || i.category.includes(searchTerm));
+        // v6.4.2: 支援英文搜尋（透過 id 欄位）
+        const lowerSearch = searchTerm.toLowerCase();
+        const filtered = typeFiltered.filter(i =>
+          i.name.includes(searchTerm) ||
+          i.category.includes(searchTerm) ||
+          (i.id && i.id.toLowerCase().includes(lowerSearch)) ||
+          (i.clinical && i.clinical.toLowerCase().includes(lowerSearch)) ||
+          (i.action && i.action.toLowerCase().includes(lowerSearch))
+        );
 
         // 按分類分組
         const groupedByCategory = {
@@ -1847,7 +2074,7 @@
 
             <div className="mb-4 relative">
               <Icon name="Search" size={18} className="absolute left-3 top-3 text-slate-500" />
-              <input type="text" placeholder="搜尋..." className="w-full bg-slate-800 border border-slate-700 rounded-xl py-2 pl-10 text-white focus:outline-none focus:border-cyan-500" onChange={e => setSearchTerm(e.target.value)} />
+              <input type="text" placeholder="搜尋..." className="w-full bg-slate-800 border border-slate-700 rounded-xl py-2 pl-10 text-white focus:outline-none focus:border-cyan-500" value={searchTerm} onChange={e => setSearchTerm(e.target.value)} />
             </div>
 
             {/* 分類統計卡片 - 可點擊跳轉 */}
@@ -1976,6 +2203,44 @@
                                             {item.injuryScenarios.map((s, idx) => (
                                               <span key={idx} className="px-1.5 py-0.5 bg-rose-900/30 text-rose-400 text-xs rounded border border-rose-800/50">{s}</span>
                                             ))}
+                                          </div>
+                                        </div>
+                                      )}
+
+                                      {/* v6.4.1 Dysfunction Display */}
+                                      {item.dysfunction && item.dysfunction.length > 0 && (
+                                        <div>
+                                          <span className="text-xs text-slate-500 block mb-1">功能障礙</span>
+                                          <div className="flex flex-wrap gap-1">
+                                            {item.dysfunction.map((d, idx) => (
+                                              <span key={idx} className="px-1.5 py-0.5 bg-amber-900/30 text-amber-400 text-xs rounded border border-amber-800/50">{d}</span>
+                                            ))}
+                                          </div>
+                                        </div>
+                                      )}
+
+                                      {/* v6.4.1 Synergists Display */}
+                                      {item.synergists && item.synergists.length > 0 && (
+                                        <div>
+                                          <span className="text-xs text-slate-500 block mb-1">協同肌</span>
+                                          <div className="flex flex-wrap gap-1">
+                                            {item.synergists.map((sid, idx) => {
+                                              const synMuscle = displayDb.find(m => m.id === sid);
+                                              return <span key={idx} className="px-1.5 py-0.5 bg-sky-900/30 text-sky-400 text-xs rounded border border-sky-800/50 cursor-pointer hover:bg-sky-800/50 transition">{synMuscle ? synMuscle.name : sid}</span>;
+                                            })}
+                                          </div>
+                                        </div>
+                                      )}
+
+                                      {/* v6.4.1 Antagonists Display */}
+                                      {item.antagonists && item.antagonists.length > 0 && (
+                                        <div>
+                                          <span className="text-xs text-slate-500 block mb-1">拮抗肌</span>
+                                          <div className="flex flex-wrap gap-1">
+                                            {item.antagonists.map((aid, idx) => {
+                                              const antMuscle = displayDb.find(m => m.id === aid);
+                                              return <span key={idx} className="px-1.5 py-0.5 bg-orange-900/30 text-orange-400 text-xs rounded border border-orange-800/50 cursor-pointer hover:bg-orange-800/50 transition">{antMuscle ? antMuscle.name : aid}</span>;
+                                            })}
                                           </div>
                                         </div>
                                       )}
