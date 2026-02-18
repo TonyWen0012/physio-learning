@@ -1,4 +1,4 @@
-# 🧠 PhysioMaster v6.3
+# 🧠 PhysioMaster 
 
 > **專為物理治療師、運動教練與解剖學學生打造的智能化互動學習工具。**
 
